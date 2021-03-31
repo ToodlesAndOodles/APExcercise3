@@ -1,0 +1,19 @@
+
+numLines = input()
+lines = input()
+queries = int(input())
+
+lines = lines.split(" ")
+i = 0
+count = 0
+while i < queries:
+    point = input()
+    point = point.split(" ")
+    for x in lines:
+        #print(x)
+        if int(point[0]) + int(point[1]) > int(x):
+            count += 1
+    print(count)
+    count = 0
+    i += 1
+    
